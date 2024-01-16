@@ -12,14 +12,7 @@ const About = () => {
             About
           </p>
         </div>
-
-        <p className="text-xl mt-20">
-          
-        </p>
-
-        <br />
-
-        <div className="p-6">
+        <div className="mt-20">
            <h1 className="text-4xl font-bold mb-4">Hello!</h1>
            <p className="mb-4">I am a third-year Computer Science student passionate about coding and debugging. My academic journey has been fueled by a desire to create innovative solutions that can transform ideas into tangible real-world projects.</p>
            <p className="mb-4">From the moment I stepped into the field of computer science, I have always been fascinated by the power of code. The ability to write a piece of code and see it come to life is incredibly satisfying.</p>
