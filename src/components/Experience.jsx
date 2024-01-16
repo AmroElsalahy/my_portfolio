@@ -1,6 +1,7 @@
 import React from "react";
 import dal from "../assets/exper/dal.jpg";
 import isans from "../assets/exper/isans.jpg";
+import engenius from "../assets/exper/engenius.jpg"
 
 const Experience = () => {
   const Experience = [
@@ -8,6 +9,7 @@ const Experience = () => {
       id: 1,
       title: "Technical Service Supports",
       company: "Dalhousie University",
+      location: "Halifax, CA",
       date: "September 2023 - Present",
       src: dal,
     },
@@ -15,8 +17,17 @@ const Experience = () => {
       id: 2,
       title: "Immigrant Youth Employability Project",
       company: "Immigrant Services Nova Scotia",
+      location: "Halifax, CA",
       date: "November 2021 - January 2022",
       src: isans,
+    },
+    {
+      id: 3,
+      title: "Tutor",
+      company: "Engineeius",
+      location: "Cairo, EGY",
+      date: "November 2021 - January 2022",
+      src: engenius,
     },
   ];
 
@@ -34,7 +45,7 @@ const Experience = () => {
         </div>
 
         <div className="relative">
-          {Experience.map(({ id, title, company, date, src }) => (
+          {Experience.map(({ id, title, company,location, date, src }) => (
             <div key={id} className={`relative flex items-center mb-8`}>
               <div
                 className={`w-24 h-24 bg-black rounded-full z-10 overflow-hidden`}
@@ -50,6 +61,7 @@ const Experience = () => {
               <div className="ml-4 z-20">
                 <p className="font-bold">{title}</p>
                 <p className="italic font-light text-white-500">{company}</p>
+                <p className="font-light text-white-500">{location}</p>
                 <p className="text-gray-500 text-sm">{date}</p>
               </div>
             </div>
